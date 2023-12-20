@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>ポートフォリオ</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" />
+        <link rel="stylesheet" href="main.css" />
+      </head>
+
+  <body> <!-- ここから本文開始 -->
+    <script>
+      let rotationX = 0;
+  let rotationY = 0;
+
+  function rotateScreen(event) {
+    const rotationSpeed = 5; // 回転の速さ
+    if (event.key === 'ArrowLeft') {
+      rotationY -= rotationSpeed;
+    } else if (event.key === 'ArrowRight') {
+      rotationY += rotationSpeed;
+    } else if (event.key === 'ArrowUp') {
+      rotationX -= rotationSpeed;
+    } else if (event.key === 'ArrowDown') {
+      rotationX += rotationSpeed;
+    }else if (event.key === ' '){
+      resetRotation();
+    }
+    document.body.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+  }
+
+  function resetRotation() {
+    rotationX = 0;
+    rotationY = 0;
+    document.body.style.transform = 'rotateX(0deg) rotateY(0deg)';
+  }
+
+  document.addEventListener('keydown', rotateScreen);
+    </script>
+    <h1>ポートフォリオ</h1>
+    <h2>自己紹介</h2>
+    <p>
+      <li><strong>所属:</strong>　大阪公立大学工業高等専門学校/総合工学システム学科/メカトロニクスコース</li>
+      <li><strong>学年:</strong>　4年生</li>
+      <li><strong>年齢:</strong>　19歳</li>
+      <li><strong>近況:</strong>　3Dプリンター買いました。</li>
+    </p>
+    <h2>成果物</h2>
+    <h3>tinkercad</h3>
+    <li><a href="https://www.tinkercad.com/things/jniBCRfWVFY-33">
+        3X3スロット
+    </a>(3年生時)</li><img src="tink1.png" alt="スロット" width="10%" />
+    <li><a href="https://www.tinkercad.com/things/4izvLA9pqx5-tic-tac-toeox-game-without-programming">
+        arduino,microbitなどのマイコンを使用しないOXゲーム
+    </a>(4年生時)</li><img src="tink2.png" alt="OX" width="10%" />
+    <h3>python</h3>
+    <li>Pythonのtkinterで3Dオセロを作りました。<a href="https://github.com/surahotoke/Free-school-assignments-related-to-tkinter">
+        (Githubリンク)
+    </a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/Czufmtb4F-0" frameborder="0" allowfullscreen></iframe>
+    <li>他にも素数列挙、ボロノイ図の生成と4色定理による色塗りアルゴリズム、http通信、bluetooth通信、画像識別、画像認識(pytorch)、STFT、FFT、音声合成、音声認識、強化学習、教師あり学習などをやりました。</li>
+    <h3>その他</h3>
+    <h4>Scratch</h4>
+    <li>作ったものがかなり多いのでアカウントを貼ります。<a href="https://scratch.mit.edu/users/surahotoke/projects/">Scratchのアカウント</a></li>
+    <li><a href="https://surahotoke.github.io/japaneseCalendar/">html,css,javascriptを使ったカレンダー</a></li>
+    <li>Scratchの拡張機能の自作</li>
+    <li>geogebra,unity,godot,stretch3,mit app inventor2,git,github,kicad,blender,creo4</li>
+    <h2>触ったことのある言語(使用歴順に)</h2>
+    <li>Scratch3,Stretch3,Python,mit app inventor2,JavaScript,C++(Arduino),C#(Unity),GDScript,GeoGebraScript,Kotlin,google app script,C</li>
+  </body> <!-- ここまで本文終了 -->
+</html>

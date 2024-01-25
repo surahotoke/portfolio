@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+html{
+  font-size: 1vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e6e6e6;
+}
+header {
+  padding: 10px 4% 10px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+header li:hover {
+  background-color: gainsboro;
+}
+main{
+  margin: 2%;
+  z-index: 1;
+  font-size: max(1rem,10px);
+}
+h1 {
+  margin: 0; padding: 0;
+  font-size: max(2.3rem,12px);
+}
+
+a {	
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 0 0 15px;
+  font-size: max(1.4rem,8px);
+}
+
+nav {
+  margin: 0 0 0 auto;
+}
+.Lset{
+  margin: 30px 0;
+  border: solid black;
+  background-color: plum;
+}
+.Mset{
+  margin: 10px 20px;
+  border: solid black;
+  background-color: wheat;
+}
+
+.Sset{
+  display: flex;
+  align-items: start;
+  margin: 5px 20px;
+  border: solid black;
+  background-color: aquamarine;
+  font-size: max(1.3rem,8px);
+}
+
+.title{
+  font-weight: bolder;
+  font-size: max(1.5rem,10px);
+}
+.Stitle{
+  font-weight: bolder;
+  font-size: max(1.3rem,10px);
+}
+
+#Oseroyoutube {
+  width: 30%;
+  aspect-ratio: 16 / 9;
+}
+
+.tinkercad{
+  color: red;
+}
+
+#qiita{
+  color: green;
+}
+
+.scratch{
+  color: rgb(251, 100, 0)
+}
+
+.img{
+  background-color: gray;
+  padding: 5px;
+}
+footer{
+  background-color: gray;
+  font-size: max(1.3rem,8px);
+}
+
+footer a:hover {
+  background-color: aqua;
+}
+
+#footer{
+  border: solid black;
+}

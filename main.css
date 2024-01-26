@@ -4,14 +4,14 @@
 
 html {
   font-size: 1vw;
-  line-height: 3em;
+  line-height: max(4vh,3em);
   color: white;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #121212; /* ダークな背景色 */
+  background-color: #121212;
 }
 
 header {
@@ -19,14 +19,14 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #2c3e50; /* ダークなヘッダーの背景色 */
+  background-color: #2c3e50;
   display: flex;
   align-items: center;
   z-index: 999;
 }
 
 header li:hover {
-  background-color: #34495e; /* ホバー時の背景色 */
+  background-color: #34495e;
 }
 
 main {
@@ -54,7 +54,7 @@ h4{
 }
 a {
   text-decoration: none;
-  color: #3498db; /* リンクの鮮やかな青色 */
+  color: #3498db;
 }
 
 ul {
@@ -85,22 +85,22 @@ nav {
 
 .Lset {
   margin: 30px 0;
-  border: solid #3498db; /* 青いボーダー */
-  background-color: #1e272e; /* ダークなセットの背景色 */
+  border: solid #3498db;
+  background-color: #1e272e;
 }
 
 .Mset {
   margin: 10px 0.8em;
-  border: solid #3498db; /* 青いボーダー */
-  background-color: #1e272e; /* ダークなセットの背景色 */
+  border: solid #3498db;
+  background-color: #1e272e;
   padding: 0.8em;
 }
 
 .Sset {
   align-items: start;
   margin: 5px 0.8em;
-  border: solid #3498db; /* 青いボーダー */
-  background-color: #192734; /* ダークなセットの背景色 */
+  border: solid #3498db;
+  background-color: #192734;
   font-size: max(1.3rem, 12px);
   padding: 1em;
 }
@@ -131,7 +131,7 @@ nav {
 }
 
 .tinkercad {
-  color: #e74c3c; /* 赤いカラー */
+  color: #e74c3c;
   text-decoration:underline;
 }
 .github{
@@ -139,22 +139,22 @@ nav {
   text-decoration:underline;
 }
 #qiita {
-  color: #27ae60; /* 緑のカラー */
+  color: #27ae60;
   text-decoration:underline;
 }
 
 .scratch {
-  color: #ff6b00; /* オレンジのカラー */
+  color: #ff6b00;
   text-decoration:underline;
 }
 
 .img {
-  background-color: #34485b; /* ダークな画像の背景色 */
+  background-color: #34485b;
   padding: 5px;
 }
 
 footer {
-  background-color: #2c3e50; /* ダークなフッターの背景色 */
+  background-color: #2c3e50;
   font-size: max(1.5rem, 16px);
 }
 
@@ -163,11 +163,12 @@ footer h2{
   padding: 5px;
 }
 footer a:hover {
-  background-color: #34495e; /* ダークなホバー時の背景色 */
+  background-color: #34495e;
 }
 
 #footer {
-  border: solid #3498db; /* 青いボーダー */
+  border: solid #3498db;
+  padding: 5px;
 }
 
 #links{
@@ -175,4 +176,8 @@ footer a:hover {
 }
 .skl{
   margin: 0;
+}
+
+#back{
+  padding: 5px;
 }

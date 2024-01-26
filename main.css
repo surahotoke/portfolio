@@ -1,117 +1,178 @@
 * {
   box-sizing: border-box;
 }
-html{
+
+html {
   font-size: 1vw;
+  line-height: 3em;
+  color: white;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #e6e6e6;
+  background-color: #121212; /* ダークな背景色 */
 }
+
 header {
   padding: 10px 4% 10px;
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #2c3e50; /* ダークなヘッダーの背景色 */
   display: flex;
   align-items: center;
   z-index: 999;
 }
 
 header li:hover {
-  background-color: gainsboro;
-}
-main{
-  margin: 2%;
-  z-index: 1;
-  font-size: max(1rem,10px);
-}
-h1 {
-  margin: 0; padding: 0;
-  font-size: max(2.3rem,12px);
+  background-color: #34495e; /* ホバー時の背景色 */
 }
 
-a {	
+main {
+  margin: 0 calc((100% - 240px)/4);
+  z-index: 1;
+  font-size: max(1rem, 12px);
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: max(2.3rem, 12px);
+}
+
+h2 {
+  padding-left: 0.8em;
+}
+h3{
+  margin-top: 0;
+  margin-bottom: 0.6em;
+}
+h4{
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+a {
   text-decoration: none;
-  color: #4b4b4b;
+  color: #3498db; /* リンクの鮮やかな青色 */
 }
 
 ul {
   list-style: none;
   margin: 0;
   display: flex;
+  padding-left: 0;
 }
 
 li {
-  margin: 0 0 0 15px;
-  font-size: max(1.4rem,8px);
+  font-size: max(1.4rem, 12px);
+}
+
+.Mset li {
+  display: flex;
+  align-items: center;
+}
+
+.Mset li strong {
+  min-width: 80px;
+  display: inline-block;
+  letter-spacing: 10px;
 }
 
 nav {
   margin: 0 0 0 auto;
 }
-.Lset{
+
+.Lset {
   margin: 30px 0;
-  border: solid black;
-  background-color: plum;
-}
-.Mset{
-  margin: 10px 20px;
-  border: solid black;
-  background-color: wheat;
+  border: solid #3498db; /* 青いボーダー */
+  background-color: #1e272e; /* ダークなセットの背景色 */
 }
 
-.Sset{
-  display: flex;
+.Mset {
+  margin: 10px 0.8em;
+  border: solid #3498db; /* 青いボーダー */
+  background-color: #1e272e; /* ダークなセットの背景色 */
+  padding: 0.8em;
+}
+
+.Sset {
   align-items: start;
-  margin: 5px 20px;
-  border: solid black;
-  background-color: aquamarine;
-  font-size: max(1.3rem,8px);
+  margin: 5px 0.8em;
+  border: solid #3498db; /* 青いボーダー */
+  background-color: #192734; /* ダークなセットの背景色 */
+  font-size: max(1.3rem, 12px);
+  padding: 1em;
 }
 
-.title{
+.title {
   font-weight: bolder;
-  font-size: max(1.5rem,10px);
+  font-size: max(1.7rem, 12px);
+  padding: 0.6em;
+  margin-bottom: 0;
 }
-.Stitle{
+
+.Stitle {
   font-weight: bolder;
-  font-size: max(1.3rem,10px);
+  font-size: max(1.5rem, 12px);
+  padding: 0.6em;
+  margin-bottom: 0;
+}
+
+.setumei {
+  padding: 0.8em;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 #Oseroyoutube {
-  width: 30%;
+  width: 70%;
   aspect-ratio: 16 / 9;
 }
 
-.tinkercad{
-  color: red;
+.tinkercad {
+  color: #e74c3c; /* 赤いカラー */
+  text-decoration:underline;
+}
+.github{
+  color: rgb(133, 131, 131);
+  text-decoration:underline;
+}
+#qiita {
+  color: #27ae60; /* 緑のカラー */
+  text-decoration:underline;
 }
 
-#qiita{
-  color: green;
+.scratch {
+  color: #ff6b00; /* オレンジのカラー */
+  text-decoration:underline;
 }
 
-.scratch{
-  color: rgb(251, 100, 0)
-}
-
-.img{
-  background-color: gray;
+.img {
+  background-color: #34485b; /* ダークな画像の背景色 */
   padding: 5px;
 }
-footer{
-  background-color: gray;
-  font-size: max(1.3rem,8px);
+
+footer {
+  background-color: #2c3e50; /* ダークなフッターの背景色 */
+  font-size: max(1.5rem, 16px);
 }
 
+footer h2{
+  margin: 0;
+  padding: 5px;
+}
 footer a:hover {
-  background-color: aqua;
+  background-color: #34495e; /* ダークなホバー時の背景色 */
 }
 
-#footer{
-  border: solid black;
+#footer {
+  border: solid #3498db; /* 青いボーダー */
+}
+
+#links{
+  font-size: max(1.3rem,12px);
+}
+.skl{
+  margin: 0;
 }
